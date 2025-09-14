@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: #082e14;
+            color: #f6f6f6;
+            padding: 10px;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        header h1 {
+            font-size: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+        .about {
+            padding: 15px;
+            text-align: justify;
+        }
+        .videos {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .videos video {
+            width: 45%;
+            height: 250px;
+            background: #000;
+        }
+        .audio {
+            text-align: center;
+            padding: 10px;
+        }
+        .audio audio {
+            width: 80%;
+        }
+        .iframe-section {
+            padding: 10px;
+            text-align: center;
+        }
+        .iframe-section iframe {
+            width: 95%;
+            height: 600px;
+            border: 1px solid #ccc;
+        }
+        .list-section, .table-section {
+            padding: 10px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="https://en.wikipedia.org/wiki/Indian_Armed_Forces">
+    <img src="F1-Emblem-500x281.png" alt="Logo"></a>
+    <h1>FormulaOne</h1>
+</header>
+
+<section class="gallery">
+    <img src="https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1739914463/trackside-images/2024/F1_75_Live___Show/2200466852.jpg" height: 120px; alt="">
+    <img src="https://okdiario.com/img/2023/02/14/ferrari-1.jpg" alt="">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.wCv17btUP1o_h3zaOcEL_AHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <img src="https://classic.exame.com/wp-content/uploads/2023/02/GettyImages-1246765746.jpg?quality=70&strip=info" alt="">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.AgVCE8ElV4ADpU3E6QhzzQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <img src="https://cdn-1.motorsport.com/images/amp/YP3n5xX2/s6/alfa-romeo-c42-1.jpg" alt="alfa romeo">
+    <img src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/956/2025-williams-fw47-formula-1-race-car_100956501.jpg" alt="williams">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.wsJQzCoZgAhTapgwUr9ncAHaEM?rs=1&pid=ImgDetMain&o=7&rm=3" alt="alpine">
+    <img src="https://media.formula1.com/image/upload/content/dam/fom-website/manual/Misc/2019carlaunches/Renault/fRONT%203%204S.jpg" alt="">
+    <img src="https://maxf1.net/wp-content/uploads/2022/02/2022-Alpha-Tauri-AT03-studio-launch-photo-side-angle-2-Photo-AlphaTauri-Red-Bull.jpg" alt="">
+    <img src="https://autogear.pt/wp-content/uploads/large-C44_ST-Front-right_Stake_ZHO_4-3_HQ_tif_300DPI_STAGE_Stake-Kick-Sauber.jpg" alt="">
+    <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/t_16by9Centre/f_auto/q_auto/fom-website/2023/RB%20(Visa%20Cashapp)/RB%20Launch/RB%20Launch%201" alt="">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.HPq0MZO1ah5Vt4RnxlOZsQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.F9Dp8-GXNGzks32lWpM3nwHaEc?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <img src="https://f1i.autojournal.fr/wp-content/uploads/sites/17/2023/01/cadillac-f1-sbd-red.jpg" alt="">
+    <img src="https://cdn.motor1.com/images/mgl/Akk29W/s3/porsche-f1-car-unofficial-rendering-by-camille-de-bastiani.jpg" alt="">
+    <img src="https://static0.carbuzzimages.com/wordpress/wp-content/uploads/gallery-images/original/1102000/100/1102165.jpg" alt="">
+    <img src="https://image-cdn.hypb.st/https://hypebeast.com/image/2024/07/25/alpine-deadpool-and-wolverine-inspired-formula-one-livery-001.jpg?q=75&w=800&cbr=1&fit=max" alt="">
+</section>
+
+<section class="about">
+    <h2>About</h2>
+    <P>Formula One (F1) is the highest class of worldwide racing for open-wheel single-seater formula racing cars sanctioned by the Fédération Internationale de l'Automobile (FIA). The FIA Formula One World Championship has been one of the world's premier forms of motorsport since its inaugural running in 1950 and is often considered to be the pinnacle of motorsport. The word formula in the name refers to the set of rules all participant cars must follow. A Formula One season consists of a series of races, known as Grands Prix. Grands Prix take place in multiple countries and continents on either purpose-built circuits or closed roads.
+A points scoring system is used at Grands Prix to determine two annual World Championships: one for the drivers, and one for the constructors—now synonymous with teams. Each driver must hold a valid Super Licence, the highest class of racing licence the FIA issues, and the races must be held on Grade One tracks, the highest grade rating the FIA issues for tracks.
+Formula One cars are the world's fastest regulated road-course racing cars, owing to high cornering speeds achieved by generating large amounts of aerodynamic downforce, most of which is generated by front and rear wings, as well as underbody tunnels. The cars depend on electronics, aerodynamics, suspension, and tyres. Traction control, launch control, automatic shifting, and other electronic driving aids were first banned in 1994. They were briefly reintroduced in 2001, and have more recently been banned since 2004 and 2008, respectively.[1]
+With the average annual cost of running a team—e.g. designing, building, and maintaining cars; staff payroll; transport—at approximately £220 million,[2] Formula One's financial and political battles are widely reported. The Formula One Group is owned by Liberty Media, which acquired it in 2017 from private-equity firm CVC Capital Partners for US$8 billion.[3][4] The United Kingdom is the hub of Formula One racing with six out of the ten teams based there</P>
+
+</section>
+<div style="text-align:center;">
+<section class="videos">
+    <div><h1 style="text-align: center; font-size: 36px;">VIDEOS</h1></div>
+   <div>
+<iframe  width="560" height="315" src="https://www.youtube.com/embed/FTeikTgSmCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video><iframe width="1137" height="455" src="https://www.youtube.com/embed/DZinoRRJHlY" title="f1 song by hannns zi " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    <!--video controls></video-->
+</section>
+
+<section class="audio">
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="f1-movie-music-379154.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<section class="iframe-section">
+  <iframe
+  src="https://www.google.com/maps?q=Route+du+Circuit+55,+4970+Stavelot,+Belgium&output=embed"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+<hr style="width:100%; border:1px solid rgb(6, 62, 5); margin: 10px 0;">
+<div>
+    <h1 style="text-align: center;font-size: 36PX;">LIST</h1>
+    <P style="font-size: 20PX; text-align: LEFT;">Teams</P>
+    <ul style="font-size: 20PX; text-align: LEFT;">
+        <li>Ferrari</li>
+        <li>Redbull</li>
+        <li>Mclaren</li>
+        <li>Mercedes</li>
+        <li>Sauber</li>
+        <li>Williams</li>
+        <li>Aston martin</li>
+        <li>Alpine</li>
+        <li>Hass</li>
+        <li>Racingbulls</li>
+    </ul>
+    <P style="font-size: 20PX; text-align: LEFT;">Drivers</P>
+    <ul style="font-size: 20PX; text-align: LEFT;">
+     <li>Hamilton</li>
+        <li>Verstappen</li>
+        <li>Leclerc</li>
+        <li>Norris</li>
+        <li>Piastri</li>
+        <li>Russel</li>
+        <li>Antonelli</li>
+        <li>Alonso</li>
+        <li>Gasly</li>
+        <li>Hulkenberg</li>
+    </ul>
+
+</section>
+
+<section class="table-section">
+    <h3>F1 Team Championships</h3>
+    <table>
+    <tr>
+        <th>Operation Name</th>
+        <th>Year</th>
+        <th>Location</th>
+        <th>Objective</th>
+        <th>Outcome</th>
+        <th>Enemy/Threat</th>
+        <th>Type</th>
+        <th>Remarks</th>
+    </tr>
+    <tr>
+        <td>McLaren</td>
+        <td>2025</td>
+        <td>Global Circuit</td>
+        <td>Win Constructors' Title</td>
+        <td>Champions</td>
+        <td>Ferrari</td>
+        <td>Season Campaign</td>
+        <td>516 points</td>
+    </tr>
+    <tr>
+        <td>Ferrari </td>
+        <td>2025</td>
+        <td>Global Circuit</td>
+        <td>Challenge McLaren</td>
+        <td>Runner-up</td>
+        <td>McLaren</td>
+        <td>Season Campaign</td>
+        <td>248 points</td>
+    </tr>
+    <tr>
+        <td>Mercedes</td>
+        <td>2025</td>
+        <td>Global Circuit</td>
+        <td>Reclaim dominance</td>
+        <td>Third place</td>
+        <td>Ferrari</td>
+        <td>Season Campaign</td>
+        <td>220 points</td>
+    </tr>
+    <tr>
+        <td>Red Bull</td>
+        <td>2025</td>
+        <td>Global Circuit</td>
+        <td>Defend title</td>
+        <td>Fourth place</td>
+        <td>McLaren</td>
+        <td>Season Campaign</td>
+        <td>192 points</td>
+    </tr>
+    <tr>
+        <td>Williams </td>
+        <td>2025</td>
+        <td>Global Circuit</td>
+        <td>Return to top 5</td>
+        <td>Fifth place</td>
+        <td>Red Bull</td>
+        <td>Season Campaign</td>
+        <td>70 points</td>
+    </tr>
+    <tr>
+        <td>Kick Sauber </td>
+        <td>2025</td>
+        <td>Global Circuit</td>
+        <td>Midfield battle</td>
+        <td>Sixth place</td>
+        <td>Williams</td>
+        <td>Season Campaign</td>
+        <td>43 points</td>
+    </tr>
+    <tr>
+        <td>Racing Bulls </td>
+        <td>2025</td>
+        <td>Global Circuit</td>
+        <td>Top 10 finish</td>
+        <td>Seventh place</td>
+        <td>Kick Sauber</td>
+        <td>Season Campaign</td>
+        <td>41 points</td>
+    </tr>
+    </table>
+</section>
+
+
+</body>
+</html>
