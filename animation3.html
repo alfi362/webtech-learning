@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+    }
+    section{
+        height: 100vh;
+        width:100%;
+        background-color: aquamarine;
+    }
+    .box{
+        height: 100px;
+        width: 200px;
+        background-color: darkgoldenrod;
+        margin: auto;
+        animation: move 4s linear infinite forwards;
+        position: relative;
+    }
+    @keyframes move{
+      0%{
+        top: 0;
+        right: 0;
+      }  
+      25%{
+        top: 333px;
+        right: 333px;
+        background-color: red;
+        transform: rotate(60deg);
+      }
+      50%{
+        top: 660px;
+        right:0px;
+        background-color: green;
+        transform: rotate(120deg);
+      }
+      75%{
+        top: 333px;
+        right: -333px;
+        background: blue;
+        transform: rotate(230deg);
+      }
+      100%{
+        top: 0;
+        right: 0;
+        background-color: yellow;
+        transform:rotate(300deg);
+      }
+    }
+</style>
+</head>
+<body>
+    <section>
+        <div class="box"></div>
+    </section>
+</body>
+</html>
