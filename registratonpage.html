@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Details</title>
+</head>
+<body style="background-color:bisque;">
+    <h1>Student-Details</h1>
+    <form action="task3.html">
+        <fieldset>
+            <legend><h3>Personal</h3></legend>
+            <table>
+                <tr>
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" name="fname" id="fname" placeholder="First Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" name="lname" id="lname" placeholder="Last Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fathername">Father's Name:</label></td>
+                    <td><input type="text" name="fathername" id="fathername" placeholder="Father's Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mothername">Mother's Name:</label></td>
+                    <td><input type="text" name="mothername" id="mothername" placeholder="Mother's Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td><input type="date" name="dob" id="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" name="Gender" id="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="Gender" id="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="Gender" id="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="bloodgroup">Blood Group:</label></td>
+                    <td>
+                        <select id="bloodgroup" name="bloodgroup">
+                            <option value="---choose---" hidden>---choose---</option>
+                            <option>A+ve</option>
+                            <option>B+ve</option>
+                            <option>AB+ve</option>
+                            <option>O+ve</option>
+                            <option>A-ve</option>
+                            <option>B-ve</option>
+                            <option>AB-ve</option>
+                            <option>O-ve</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend><h3>Contacts</h3></legend>
+            <table>
+                <tr>
+                    <td><label for="mobile">Mobile No:</label></td>
+                    <td><input type="tel" name="mobile" id="mobile" placeholder="10 digits" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Mail id:</label></td>
+                    <td><input type="email" name="mail" id="mail" placeholder="sample@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td>
+                        <input type="text" name="address" id="address" placeholder="house_no street name" required><br>
+                        <input type="text" placeholder="Line 1"> <input type="text" placeholder="Line 2">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="---choose---" hidden>---choose---</option>
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>Oman</option>
+                            <option>China</option>
+                            <option>Japan</option>
+                            <option>France</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td>
+                        <select id="state" name="state">
+                            <option value="---choose---" hidden>---choose---</option>
+                            <option>Kerala</option>
+                            <option>Karnataka</option>
+                            <option>Tamil Nadu</option>
+                            <option>A.P</option>
+                            <option>U.P</option>
+                            <option>Maharashtra</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Kashmir</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pincode">Pin Code:</label></td>
+                    <td><input type="number" name="pincode" id="pincode" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend><h3>Education</h3></legend>
+            <table>
+                <tr>
+                    <td><label for="degree">Highest Degree:</label></td>
+                    <td>
+                        <select id="degree" name="degree">
+                            <option value="---choose---" hidden>---choose---</option>
+                            <option>UG</option>
+                            <option>PG</option>
+                            <option>PHD</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Stream:</label></td>
+                    <td>
+                        <input type="radio" name="Stream" id="Mech">
+                        <label for="Mech">Mech</label>
+                        <input type="radio" name="Stream" id="Civil">
+                        <label for="Civil">Civil</label>
+                        <input type="radio" name="Stream" id="CS">
+                        <label for="CS">CS</label>
+                        <input type="radio" name="Stream" id="EC">
+                        <label for="EC">EC</label>
+                        <input type="radio" name="Stream" id="IT">
+                        <label for="IT">IT</label>
+                        <input type="radio" name="Stream" id="EEE">
+                        <label for="EEE">EEE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="other_stream">If Other:</label></td>
+                    <td><input type="text" name="other_stream" id="other_stream"></td>
+                </tr>
+                <tr>
+                    <td><label for="yop">YOP:</label></td>
+                    <td>
+                        <select id="yop" name="yop">
+                            <option value="---choose---" hidden>---choose---</option>
+                            <option>2025</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                            <option>2021</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="university">University:</label></td>
+                    <td><input type="text" name="university" id="university" required></td>
+                </tr>
+                <tr>
+                    <td><label for="percentage">Percentage:</label></td>
+                    <td><input type="text" name="percentage" id="percentage" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend><h3>Placement</h3></legend>
+            <table>
+                <tr>
+                    <td><b>Skills:</b></td>
+                    <td>
+                        <input type="checkbox" name="Skills" id="HTML">
+                        <label for="HTML">HTML</label>
+                        <input type="checkbox" name="Skills" id="CSS">
+                        <label for="CSS">CSS</label>
+                        <input type="checkbox" name="Skills" id="JS">
+                        <label for="JS">JS</label><br>
+                        <input type="checkbox" name="Skills" id="ReactJS">
+                        <label for="ReactJS">ReactJS</label>
+                        <input type="checkbox" name="Skills" id="NodeJS">
+                        <label for="NodeJS">NodeJS</label>
+                        <input type="checkbox" name="Skills" id="TensorFlowJS">
+                        <label for="TensorFlowJS">TensorFlowJS</label><br>
+                        <input type="checkbox" name="Skills" id="ElectronJS">
+                        <label for="ElectronJS">ElectronJS</label>
+                        <input type="checkbox" name="Skills" id="ReactNative">
+                        <label for="ReactNative">ReactNative</label>
+                        <input type="checkbox" name="Skills" id="Redeem">
+                        <label for="Redeem">Redeem</label>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr></td></tr>
+                <tr>
+                    <td><b>Domain:</b></td>
+                    <td>
+                        <input type="radio" name="Domain" id="Devops">
+                        <label for="Devops">Devops</label>
+                        <input type="radio" name="Domain" id="Testing">
+                        <label for="Testing">Testing</label>
+                        <input type="radio" name="Domain" id="Dev">
+                        <label for="Dev">Dev</label>
+                        <input type="radio" name="Domain" id="Support">
+                        <label for="Support">Support</label>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr></td></tr>
+                <tr>
+                    <td><b>Place of Preference:</b></td>
+                    <td>
+                        <input type="checkbox" name="Place of Preference" id="Bangalore">
+                        <label for="Bangalore">Bangalore</label>
+                        <input type="checkbox" name="Place of Preference" id="Chennai">
+                        <label for="Chennai">Chennai</label>
+                        <input type="checkbox" name="Place of Preference" id="Hyderabad">
+                        <label for="Hyderabad">Hyderabad</label><br>
+                        <input type="checkbox" name="Place of Preference" id="Pune">
+                        <label for="Pune">Pune</label>
+                        <input type="checkbox" name="Place of Preference" id="Delhi">
+                        <label for="Delhi">Delhi</label>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr></td></tr>
+                <tr>
+                    <td><b>Expecting Salary:</b></td>
+                    <td>
+                        <input type="radio" name="Expecting Salary" id="Less Than 3 LPA">
+                        <label for="Less Than 3 LPA">Less Than 3 LPA</label>
+                        <input type="radio" name="Expecting Salary" id="3.6 LPA">
+                        <label for="3.6 LPA">3.6 LPA</label><br>
+                        <input type="radio" name="Expecting Salary" id="6-10 LPA">
+                        <label for="6-10 LPA">6-10 LPA</label>
+                        <input type="radio" name="Expecting Salary" id="More Than 10 LPA">
+                        <label for="More Than 10 LPA">More Than 10 LPA</label>
+                        <input type="radio" name="Expecting Salary" id="No Expectation">
+                        <label for="No Expectation">No Expectation</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         <button type="submit" name="next">next</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

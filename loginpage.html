@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    <style>
+        body
+        {background:url(https://tse4.mm.bing.net/th/id/OIP.buVWN8WX7BdkdfodMDozQgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3);
+        background-size:cover;
+        }
+        .strip{
+            height: 128px;
+            width: 100%;
+            background-color: blueviolet;
+        }
+        .one{
+            opacity:0.4;
+        }
+        .two{
+            opacity: 0.8;
+        }
+    </style>
+    <div class="strip one"></div>
+    <div class="strip two"></div>
+    <form action="registratonpage.html">
+        <fieldset>
+            <legend><h3>Create Account</h3></legend>
+            <table>
+                <tr>
+                    <td><label for="username">UserName:</label></td>
+                    <td><input type="text" name="username" id="username" placeholder="UserName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="reenter">Re-Enter Password:</label></td>
+                    <td><input type="password" name="reenter" id="reenter" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <label for="terms">Agree to Terms & Conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
